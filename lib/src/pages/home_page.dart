@@ -1,5 +1,6 @@
-import 'package:componentes/src/pages/alert_page.dart';
 import 'package:flutter/material.dart';
+
+import 'package:componentes/src/pages/alert_page.dart';
 import 'package:componentes/providers/menu_provider.dart';
 import 'package:componentes/utils/icono_string_util.dart';
 
@@ -40,12 +41,14 @@ class HomePage extends StatelessWidget {
        leading: getIcon(opt['icon']),
        trailing: Icon(Icons.keyboard_arrow_right, color: Colors.blue),
        onTap: (){
+        
+          Navigator.pushNamed(context, opt['ruta']);
 
-         final route = MaterialPageRoute(
-           builder: (builder) => AlertPage()
-           );
+           //final route = MaterialPageRoute(
+           // builder: (builder) => AlertPage()
+           //;
          
-         Navigator.push(context, route);
+           //1Navigator.push(context, route);
 
        },
      );
