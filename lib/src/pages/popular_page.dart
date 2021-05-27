@@ -38,7 +38,6 @@ class PopularPage extends StatelessWidget {
   Widget _image01() {
     return Card(
       elevation: 0.0,
-      shape: RoundedRectangleBorder (borderRadius: BorderRadius.circular(20.0)),
       child: Column(children: <Widget>[
         ListTile(
           title: Text('Popular', style: TextStyle(fontSize: 40.0)),
