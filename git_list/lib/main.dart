@@ -18,6 +18,7 @@ void main() {
 class MyApp extends StatelessWidget {
   final HomeRepository _repository;
 
+
   const MyApp({Key? key, required HomeRepository repository})
       : _repository = repository,
         super(key: key);
@@ -37,6 +38,7 @@ class AppView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
