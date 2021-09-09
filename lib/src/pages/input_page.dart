@@ -86,16 +86,11 @@ class _InputPageState extends State<InputPage> {
       obscureText: true,
       decoration: InputDecoration(
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0)),
-        hintText: "Password",
+       hintText: "Password",
         labelText: "Password",
         suffixIcon: Icon(Icons.lock_open),
         icon: Icon(Icons.lock),
       ),
-      onChanged: (valor) {
-        setState(() {
-          _email = valor;
-        });
-      },
     );
   }
 
@@ -132,11 +127,11 @@ class _InputPageState extends State<InputPage> {
 
   List<DropdownMenuItem<String>> getOpcionesDropdown(){
 
-    List<DropdownMenuItem<String>> lista = new List.empty();
+    List<DropdownMenuItem<String>> lista = new List();
 
     _poderes.forEach((poder) {
 
-      lista.add ( DropdownMenuItem(
+      lista.add( DropdownMenuItem(
         child: Text(poder),
         value: poder,
       ));
@@ -146,8 +141,6 @@ class _InputPageState extends State<InputPage> {
   }
 
   Widget _crearDropdown() {
-
-
 
     return Row(
       children: [
