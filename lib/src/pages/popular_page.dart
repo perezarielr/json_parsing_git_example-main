@@ -109,11 +109,11 @@ class PopularPage extends StatelessWidget {
           Row(mainAxisSize: MainAxisSize.min, children: [
             Icon(Icons.tune, color: Colors.grey[400], size: 34.0),
             SizedBox(width: 30.0),
-            FlatButton(
-              padding: EdgeInsets.all(15.0),
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0)),
-              color: Colors.black54,
+            ElevatedButton(
+              //padding: EdgeInsets.all(15.0),
+              //shape: RoundedRectangleBorder(
+                //  borderRadius: BorderRadius.circular(20.0)),
+              //color: Colors.black54,
               child: Text('Buy'),
               onPressed: () {},
             )
